@@ -1,7 +1,7 @@
-Feladat
+# Feladat
 Közlekedési táblák felismerése valós idöben
 
-Környezet
+### Környezet ###
 Python futtatására alkalmas környezet (Windows 10 - 64bit), Python fordító program - Spyder (Python 3.6.5 64bit) , OpenCV 4.1.0 verzió.
 
 1. Leírás
