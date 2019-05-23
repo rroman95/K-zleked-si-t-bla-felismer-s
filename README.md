@@ -10,7 +10,7 @@ Python futtatására alkalmas környezet (Windows 10 - 64bit), Python fordító 
 Ez a program közlekedési táblák felismerésére szolgál az OpenCV könyvtárat és a Python nyelvet használva.
 Felismerhetö táblák:
 
-![Screenshot](images/allsigns.jpg)
+![Screenshot](images/allsigns.png)
 
 ### 2. Felismerés ###
   
