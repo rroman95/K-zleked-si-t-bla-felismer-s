@@ -1,13 +1,15 @@
-# Feladat
+# Közlekedési táblák felismerése és osztályozása valós időben
+
+### Feladat ###
 Közlekedési táblák felismerése valós idöben
 
 ### Környezet ###
 Python futtatására alkalmas környezet (Windows 10 - 64bit), Python fordító program - Spyder (Python 3.6.5 64bit) , OpenCV 4.1.0 verzió.
 
-1. Leírás
+### 1. Leírás ###
 Ez a program közlekedési táblák felismerésére szolgál az OpenCV könyvtárat és a Python nyelvet használva.
 
-2. Felismerés
+### 2. Felismerés ###
   
   Kép előkészítése az OpenCV funkciók használatára
   - cv2.medianBlur filter alkalmazása zaj eltüntetése és élek elsimítása érdekében (így kissebb esélyel észlel a program hamis kör alakzatot)
@@ -31,9 +33,9 @@ Ez a program közlekedési táblák felismerésére szolgál az OpenCV könyvtá
       Ezen zónákon belül külön leelemzi a domináns színt,
       így meghatározvaa program által felismerhetö UTASÍTÁST ADÓ jelzötáblák fajtáját.
       
-3. Lehetséges problémák
+### 3. Lehetséges problémák ###
 
-A felismerési módszer primitívsége miatt a program hajlamos a perspektívából és fényviszonyokból félreismerni bizonyos táblákat.
+A felismerési módszer primitívsége miatt a program hajlamos a perspektívából és fényviszonyokból adódóan félreismerni bizonyos táblákat.
 A tábla szegmentálási módszer általi felismerése tévesen ismerhet fel alakzatokat, hiányos, "defektív" táblákat bizonyos táblaként.
 Példa: 
 
@@ -41,5 +43,6 @@ Példa:
 
 
 ![Screenshot](images/forwardandright_false.jpg)
+![Screenshot](images/stopsign_false.jpg)
 
 
