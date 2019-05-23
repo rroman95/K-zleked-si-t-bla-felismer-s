@@ -36,5 +36,6 @@ Ez a program közlekedési táblák felismerésére szolgál az OpenCV könyvtá
 A felismerési módszer primitívsége miatt a program hajlamos a perspektívából és fényviszonyokból félreismerni bizonyos táblákat.
 A tábla szegmentálási módszer általi felismerése tévesen ismerhet fel alakzatokat, hiányos, "defektív" táblákat bizonyos táblaként.
 Példa: 
+![Screenshot](stopsign.jpg)
 
 
