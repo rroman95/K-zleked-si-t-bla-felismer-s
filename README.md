@@ -48,4 +48,16 @@ Példa:
 ![Screenshot](images/forwardandright_false.jpg)
 ![Screenshot](images/stopsign_false.jpg)
 
+### 4. Tesztelés ###
+
+A kód teszteléséhez otthon gyártott "jelzőtáblákat" használtam , amelyek így néztek ki:
+![Screenshot](images/testsigns.jpg)
+
+### 5. Javítások ###
+
+- Median blur helyett Gaussian blur használata az élek megkímélése miatt (sokkal jobb lett a körök felismerésenek aránya)
+- cv2.HoughCircles paramétereinek finomhangolása
+- az összehasonlító zónák kalibrálása
+- a software mostantól képes statikus képeket is felismerni (staticimage.py)
+
 
