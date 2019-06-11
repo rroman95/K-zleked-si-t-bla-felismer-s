@@ -48,6 +48,9 @@ Példa:
 A kód teszteléséhez otthon gyártott "jelzőtáblákat" használtam , amelyek így néztek ki:
 ![Screenshot](images/testsigns.jpg)
 
+- Arra számíthatnánk, hogy az ugyan azon, csak elforgatott vagy tükrözött jelzőtáblák felismerésének százaléka azonos lesz. 
+  Az eltérést valószinűleg a tesztképek különbözősége okozza (perspektíva/fényviszonyok/fókusztávolság).
+
 A teszteredmények az adott tesztcsoportra (120 kép, táblánként 20)
 ![Screenshot](images/table.png)
 ### 5. Javítások ###
