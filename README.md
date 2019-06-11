@@ -49,7 +49,7 @@ A kód teszteléséhez otthon gyártott "jelzőtáblákat" használtam , amelyek
 ![Screenshot](images/testsigns.jpg)
 
 A teszteredmények az adott tesztcsoportra (120 kép, táblánként 20)
-![Screenshot](images/table.jpg)
+![Screenshot](images/table.png)
 ### 5. Javítások ###
 
 - Median blur helyett Gaussian blur használata az élek megkímélése miatt (sokkal jobb lett a körök felismerésenek aránya)
