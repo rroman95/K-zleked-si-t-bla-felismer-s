@@ -29,12 +29,7 @@ Felismerhetö táblák:
       Ez által le tudjuk szükiteni a lehetséges táblákat ELSÖBBSÉGET SZABÁLYOZÓ táblákra (PIROS -> if dominant_color[2] > 100:) vagy
       UTASÍTÁST ADÓ jelzötáblákra (KÉK -> elif dominant_color[0] > 80:). 
       
-      Mivel a program az elsöbbséget adó táblák közül csupán a STOP táblát tudja felismerni, így ha a domináns szín 100 felett van,
-      automatikan STOP táblát
-      ismer fel a program.
-      Ha a "elif dominant_color[0] > 80:" érvényesül, a program 3 zónára szegmentálja a kört. 
-      Ezen zónákon belül külön leelemzi a domináns színt,
-      így meghatározvaa program által felismerhetö UTASÍTÁST ADÓ jelzötáblák fajtáját.
+Mivel a program az elsöbbséget adó táblák közül csupán a STOP táblát tudja felismerni, így ha a domináns szín 100 felett van, automatikan STOP táblát ismer fel a program. Ha a "elif dominant_color[0] > 80:" érvényesül, a program 3 zónára szegmentálja a kört. Ezen zónákon belül külön leelemzi a domináns színt, így meghatározvaa program által felismerhetö UTASÍTÁST ADÓ jelzötáblák fajtáját.
       
 ### 3. Lehetséges problémák ###
 
@@ -53,11 +48,15 @@ Példa:
 A kód teszteléséhez otthon gyártott "jelzőtáblákat" használtam , amelyek így néztek ki:
 ![Screenshot](images/testsigns.jpg)
 
+A teszteredmények az adott tesztcsoportra (120 kép, táblánként 20)
+![Screenshot](images/table.jpg)
 ### 5. Javítások ###
 
 - Median blur helyett Gaussian blur használata az élek megkímélése miatt (sokkal jobb lett a körök felismerésenek aránya)
 - cv2.HoughCircles paramétereinek finomhangolása
 - az összehasonlító zónák kalibrálása
 - a software mostantól képes statikus képeket is felismerni (staticimage.py)
-
+    - a staticimage.py a képeket egy fix vertikális 400 pixeles magasságra nagyítja/kicsinyíti , mindeközben ügyelve a képarányra.
+      Az oka ennek, hogy a cv2.HoughCircles algoritmus fix paraméterekkel dolgozik. Így elkerülhető a különböző inputon bejövő képek
+      nagyságából adódó hibás vagy nem felismerés.
 
